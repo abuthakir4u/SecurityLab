@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        #decoy_website {
+            cursor: pointer;
+            position: absolute;
+            width: 62px;
+            height: 22px;
+            z-index: 1;
+            top: 206px;
+            left: 18px;
+            font-size: 15px;
+        }
+        #target_website {
+            position: relative;
+            width: 78px;
+            height: 192px;
+            opacity: 0.00001;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Web Application 1</h1>
+    <div id="decoy_website">
+        <a href="http://google.com">Click Me</a>
+    </div>
+    <iframe id="target_website" src="http://localhost:3001/"></iframe>
+</body>
+
+</html>
